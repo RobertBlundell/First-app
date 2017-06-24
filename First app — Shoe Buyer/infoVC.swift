@@ -9,27 +9,37 @@
 import UIKit
 
 class infoVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    
+    @IBAction func backbuttonpressed(_sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBOutlet weak var confirmbutton: UIButton!
+    @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var textfield2: UITextField!
+    @IBOutlet weak var textfield3: UITextField!
+    @IBOutlet weak var chosenshoeimage: UIImageView!
+    
+    var chosenshoe: String = "error"
+    
+    @IBAction func confirmbuttonpressed(_ sender: Any) {
+        if textfield.text!.isEmpty || textfield2.text!.isEmpty || textfield3.text!.isEmpty  {
+            performSegue(withIdentifier: "failurepopup", sender: self)}
+        else {performSegue(withIdentifier: "successpopup", sender: self)}
     }
-    */
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        chosenshoeimage.image = UIImage(named: "shoes\(chosenshoe)")
+       // Pagenumberlabel.text = chosenshoe
+    }
 
+   
+    
 }
+

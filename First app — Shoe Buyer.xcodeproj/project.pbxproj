@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E15FC0F21EC7807D00A79A3D /* infoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FC0F11EC7807D00A79A3D /* infoVC.swift */; };
+		E18E26D01EC7A78100ED4966 /* successVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18E26CF1EC7A78100ED4966 /* successVC.swift */; };
+		E18E26D21EC7A7B600ED4966 /* failureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18E26D11EC7A7B600ED4966 /* failureVC.swift */; };
 		E19FC91E1EC5ABF600587DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FC91D1EC5ABF600587DCB /* AppDelegate.swift */; };
-		E19FC9201EC5ABF600587DCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FC91F1EC5ABF600587DCB /* ViewController.swift */; };
+		E19FC9201EC5ABF600587DCB /* choiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FC91F1EC5ABF600587DCB /* choiceVC.swift */; };
 		E19FC9231EC5ABF600587DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FC9211EC5ABF600587DCB /* Main.storyboard */; };
 		E19FC9251EC5ABF600587DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19FC9241EC5ABF600587DCB /* Assets.xcassets */; };
 		E19FC9281EC5ABF600587DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FC9261EC5ABF600587DCB /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E15FC0F11EC7807D00A79A3D /* infoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoVC.swift; sourceTree = "<group>"; };
+		E18E26CF1EC7A78100ED4966 /* successVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = successVC.swift; sourceTree = "<group>"; };
+		E18E26D11EC7A7B600ED4966 /* failureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = failureVC.swift; sourceTree = "<group>"; };
 		E19FC91A1EC5ABF500587DCB /* First app — Shoe Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First app — Shoe Buyer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19FC91D1EC5ABF600587DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E19FC91F1EC5ABF600587DCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E19FC91F1EC5ABF600587DCB /* choiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceVC.swift; sourceTree = "<group>"; };
 		E19FC9221EC5ABF600587DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E19FC9241EC5ABF600587DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19FC9271EC5ABF600587DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				E19FC91D1EC5ABF600587DCB /* AppDelegate.swift */,
-				E19FC91F1EC5ABF600587DCB /* ViewController.swift */,
+				E19FC91F1EC5ABF600587DCB /* choiceVC.swift */,
+				E15FC0F11EC7807D00A79A3D /* infoVC.swift */,
+				E18E26CF1EC7A78100ED4966 /* successVC.swift */,
+				E18E26D11EC7A7B600ED4966 /* failureVC.swift */,
 				E19FC9211EC5ABF600587DCB /* Main.storyboard */,
 				E19FC9241EC5ABF600587DCB /* Assets.xcassets */,
 				E19FC9261EC5ABF600587DCB /* LaunchScreen.storyboard */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19FC9201EC5ABF600587DCB /* ViewController.swift in Sources */,
+				E18E26D01EC7A78100ED4966 /* successVC.swift in Sources */,
+				E19FC9201EC5ABF600587DCB /* choiceVC.swift in Sources */,
+				E15FC0F21EC7807D00A79A3D /* infoVC.swift in Sources */,
 				E19FC91E1EC5ABF600587DCB /* AppDelegate.swift in Sources */,
+				E18E26D21EC7A7B600ED4966 /* failureVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +528,7 @@
 				E19FC9441EC5ABF600587DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E19FC9451EC5ABF600587DCB /* Build configuration list for PBXNativeTarget "First app — Shoe BuyerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				E19FC9471EC5ABF600587DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E19FC9481EC5ABF600587DCB /* Build configuration list for PBXNativeTarget "First app — Shoe BuyerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				E19FC94A1EC5ABF600587DCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
